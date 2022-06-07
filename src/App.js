@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import Home from './views/Home/Home';
 import Search from './views/Search/Search';
@@ -7,10 +7,12 @@ import Search from './views/Search/Search';
 // eslint-disable-next-line arrow-body-style
 const App = () => {
   return (
-    <Routes>
-      <Route index element={<Home />} />
-      <Route path="search" element={<Search />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
