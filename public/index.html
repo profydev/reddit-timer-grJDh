@@ -11,10 +11,31 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+    <style>
+      @font-face {
+        font-family: "Bitter";
+        src:local("Bitter-Regular.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        src: url("Montserrat-Regular.woff2") format("woff2");
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        src: url("Montserrat-Medium.woff2") format("woff2");
+        font-weight: 500;
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        src: url("Montserrat-SemiBold.woff2") format("truetype");
+        font-weight: 600;
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
