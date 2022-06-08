@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
-import Home from './views/Home/Home';
-import Search from './views/Search/Search';
+import Home from './pages/Home/Home';
+import Search from './pages/Search/Search';
 
 // eslint-disable-next-line arrow-body-style
 const App = () => {
