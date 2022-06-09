@@ -1,11 +1,30 @@
 import React from 'react';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 
-function App() {
+import { Normalize } from 'styled-normalize';
+import theme from './theme';
+import GlobalStyle from './GlobalStyle';
+
+import Home from './pages/Home/Home';
+import Search from './pages/Search/Search';
+import NotFound from './pages/NotFound/NotFound';
+
+// eslint-disable-next-line arrow-body-style
+const App = () => {
   return (
-    <div>
-      App Placeholder
-    </div>
+    <ThemeProvider theme={theme}>
+      <Normalize />
+      <GlobalStyle />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
