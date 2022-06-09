@@ -6,6 +6,7 @@ import { Normalize } from 'styled-normalize';
 import theme from './theme';
 import GlobalStyle from './GlobalStyle';
 
+import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
 import NotFound from './pages/NotFound/NotFound';
@@ -16,6 +17,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Normalize />
       <GlobalStyle />
+      <Header />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
