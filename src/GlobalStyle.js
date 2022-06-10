@@ -45,6 +45,8 @@ const GlobalStyle = createGlobalStyle`
     line-height: ${(props) => props.theme.font.lineHeight.default};
     color: ${(props) => props.theme.color.text};
     background-color: ${(props) => props.theme.color.background};
+    max-width: 1440px;
+    margin: auto;
   }
 `;
 
